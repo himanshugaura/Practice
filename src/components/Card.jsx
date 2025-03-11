@@ -21,12 +21,12 @@ const Card = ({course}) => {
     }
     
   return (
-    <div className='flex flex-col justify-center items-center bg-[rgba(0,0,0,0.71)] shadow-[1px_1px_10px] shadow-gray-500 rounded-2xl md:w-[30%]'>
+    <div className='flex flex-col justify-center items-center bg-[rgba(0,0,0,0.71)] shadow-[1px_1px_10px] shadow-gray-500 rounded-2xl max-w-[500px] md:w-[30%] lg:w-[25vw] lg:max-w-[25%]  xl:max-w-[20vw]'>
         <div className='relative'>
             <img src={course.image.url} alt="" className='rounded-t-2xl '/>
             
             <div>
-                <button className='absolute right-2 bottom-[-20px] rounded-[50%] bg-white p-1'
+                <button className='absolute right-2 bottom-[-20px] rounded-[50%] bg-white p-1 cursor-pointer'
                 
                 onClick={likeHandler}>
                     {
@@ -39,7 +39,7 @@ const Card = ({course}) => {
 
         <div className='p-5'>
             <p className='text-[1.2rem] text-cyan-300 font-bold mb-5 mt-2'>{course.title}</p>
-            <p className='text-justify'>{description}</p>
+            <p className=''>{description}</p>
         </div>
     </div>
   )

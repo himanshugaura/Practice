@@ -15,7 +15,7 @@ const Cards = ({courses}) => {
       };
 
   return (
-    <div className='flex flex-col px-10 gap-10 bg-gray-900 md:flex-row md:flex-wrap w-full md:items-center md:justify-center'>
+    <div className='flex flex-col px-10 gap-10 justify-center items-center md:flex-row md:flex-wrap w-full lg:gap-15 lg:flex-wrap'>
         {
        getCourses().map( (course) => {
            return <Card key={course.id} course = {course}/>
